@@ -42,7 +42,10 @@ export function PayButton({
   const isDemoMode = demoMode || process.env.NEXT_PUBLIC_DEMO_MODE === 'true';
 
   const handlePayment = async () => {
+    console.log('PayButton clicked');
+
     if (!address) {
+      console.log('No wallet connected');
       setError('Please connect your wallet first');
       return;
     }
@@ -50,21 +53,27 @@ export function PayButton({
     setError(null);
 
     try {
+      console.log('Preparing transaction...', { recipientAddress, amount });
+
       // Validate recipient address
       if (!recipientAddress || !recipientAddress.startsWith('0x')) {
-        throw new Error('Invalid recipient address');
+        console.error('Invalid address:', recipientAddress);
+        throw new Error('Invalid recipient address. The payment link might be broken/old.');
       }
 
       // For MVP: Send native token (simulating USDC)
       // In production, this would use ERC-20 USDC contract
 
+      console.log('Sending transaction...');
       sendTransaction({
         to: recipientAddress as `0x${string}`,
         value: parseEther(amount),
       });
     } catch (err: any) {
+      console.error('Payment error:', err);
       const errorMessage = err.message || 'Transaction failed. Please try again.';
       setError(errorMessage);
+      alert(`Payment Error: ${errorMessage}`); // Force visibility
       onError(new Error(errorMessage));
     }
   };
@@ -262,6 +271,10 @@ export function PayButton({
           </p>
         </div>
       )}
+      {/* Debug/Verification Info */}
+      <p className="text-xs text-center text-gray-400 font-mono">
+        To: {recipientAddress.startsWith('0x') ? `${recipientAddress.slice(0, 6)}...${recipientAddress.slice(-4)}` : 'Invalid Address'}
+      </p>
     </div>
   );
 }

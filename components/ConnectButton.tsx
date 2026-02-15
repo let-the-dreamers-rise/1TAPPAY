@@ -63,10 +63,9 @@ export function ConnectButton({ variant = 'primary', showBalance = false }: Conn
                       type="button"
                       className={`
                         px-6 py-3 rounded-lg font-semibold transition-all duration-200
-                        ${
-                          variant === 'primary'
-                            ? 'bg-gradient-to-r from-primary-500 to-accent-500 text-white hover:shadow-lg hover:scale-105'
-                            : 'bg-white text-gray-900 border border-gray-300 hover:bg-gray-50'
+                        ${variant === 'primary'
+                          ? 'bg-gradient-to-r from-primary-500 to-accent-500 text-white hover:shadow-lg hover:scale-105'
+                          : 'bg-white text-gray-900 border border-gray-300 hover:bg-gray-50'
                         }
                       `}
                     >
