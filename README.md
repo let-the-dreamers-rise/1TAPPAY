@@ -5,8 +5,6 @@
 ![Etherlink Testnet](https://img.shields.io/badge/Network-Etherlink_Testnet-blue?style=for-the-badge&logo=tezos)
 ![Next.js](https://img.shields.io/badge/Framework-Next.js_15-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/Language-TypeScript-blue?style=for-the-badge&logo=typescript)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-
 > **"Borderless payments for the internet. Simple. Fast. Secure."**
 
 ---
