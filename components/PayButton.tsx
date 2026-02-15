@@ -273,7 +273,7 @@ export function PayButton({
       )}
       {/* Debug/Verification Info */}
       <p className="text-xs text-center text-gray-400 font-mono">
-        To: {recipientAddress.startsWith('0x') ? `${recipientAddress.slice(0, 6)}...${recipientAddress.slice(-4)}` : 'Invalid Address'}
+        Sending {amount} XTZ → {recipientAddress.startsWith('0x') ? `${recipientAddress.slice(0, 6)}...${recipientAddress.slice(-4)}` : 'Invalid Address'}
       </p>
     </div>
   );
