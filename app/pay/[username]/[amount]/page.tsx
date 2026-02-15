@@ -104,10 +104,10 @@ export default function PaymentPage() {
                 Amount
               </p>
               <p className="text-5xl font-bold gradient-text mb-2">
-                ${formatAmount(amount)}
+                {formatAmount(amount)} XTZ
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                USDC on Etherlink Testnet
+                on Etherlink Shadownet
               </p>
             </div>
 
