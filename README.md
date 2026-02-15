@@ -141,6 +141,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ---
 
 <div align="center">
-  <p>Built with ❤️ by <b>Dishant</b> for the <b>Etherlink Hackathon</b></p>
+  <p>Built with ❤️ by <b>Ashwin</b> for the <b>Etherlink Hackathon</b></p>
   <p><i>Let the dreamers rise.</i></p>
 </div>
