@@ -9,7 +9,7 @@
 
 import { ConnectButton as RainbowConnectButton } from '@rainbow-me/rainbowkit';
 import { useAccount, useBalance } from 'wagmi';
-import { etherlinkTestnet } from '@/config/wagmi';
+import { etherlinkShadownet } from '@/config/wagmi';
 
 interface ConnectButtonProps {
   variant?: 'primary' | 'secondary';
@@ -23,7 +23,7 @@ export function ConnectButton({ variant = 'primary', showBalance = false }: Conn
   });
 
   // Check if connected to wrong network
-  const isWrongNetwork = chain && chain.id !== etherlinkTestnet.id;
+  const isWrongNetwork = chain && chain.id !== etherlinkShadownet.id;
 
   return (
     <div className="flex flex-col items-end gap-2">
@@ -145,7 +145,7 @@ export function ConnectButton({ variant = 'primary', showBalance = false }: Conn
         <div className="animate-fade-in">
           <div className="px-4 py-2 bg-warning/10 border border-warning rounded-lg">
             <p className="text-sm text-warning font-medium">
-              ⚠️ Please switch to Etherlink Testnet
+              ⚠️ Please switch to Etherlink Shadownet
             </p>
           </div>
         </div>
