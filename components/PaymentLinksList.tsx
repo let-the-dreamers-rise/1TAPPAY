@@ -155,7 +155,7 @@ export function PaymentLinksList({ links }: PaymentLinksListProps) {
             {expandedId === link.id && (
               <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700 flex justify-center animate-fade-in">
                 <QRCodeDisplay
-                  url={link.qrCodeData}
+                  url={typeof window !== 'undefined' ? `${window.location.origin}${link.url}` : link.qrCodeData}
                   size={180}
                   downloadable={true}
                   label={`@${link.username} - $${formatAmount(link.amount)}`}
