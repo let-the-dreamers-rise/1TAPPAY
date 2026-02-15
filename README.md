@@ -69,10 +69,10 @@ npm install
 Create a `.env.local` file in the root directory:
 
 ```env
-# Etherlink Testnet Configuration
-NEXT_PUBLIC_CHAIN_ID=128123
-NEXT_PUBLIC_CHAIN_NAME="Etherlink Testnet"
-NEXT_PUBLIC_RPC_URL="https://node.ghostnet.etherlink.com"
+# Etherlink Shadownet Configuration
+NEXT_PUBLIC_CHAIN_ID=127823
+NEXT_PUBLIC_CHAIN_NAME="Etherlink Shadownet"
+NEXT_PUBLIC_RPC_URL="https://node.shadownet.etherlink.com"
 NEXT_PUBLIC_BLOCK_EXPLORER="https://testnet.explorer.etherlink.com"
 
 # WalletConnect Project ID (Get one from https://cloud.walletconnect.com)
@@ -112,11 +112,11 @@ Deploying to the world is easy with Vercel.
 
 ---
 
-## 📜 Smart Contract Details (Etherlink Testnet)
+## 📜 Network Details (Etherlink Shadownet)
 
-*   **Network Name**: Etherlink Testnet
-*   **RPC URL**: `https://node.ghostnet.etherlink.com`
-*   **Chain ID**: `128123`
+*   **Network Name**: Etherlink Shadownet
+*   **RPC URL**: `https://node.shadownet.etherlink.com`
+*   **Chain ID**: `127823`
 *   **Currency Symbol**: `XTZ`
 *   **Block Explorer**: [Etherlink Explorer](https://testnet.explorer.etherlink.com)
 
