@@ -20,10 +20,10 @@ export const etherlinkTestnet = defineChain({
   },
   rpcUrls: {
     default: {
-      http: ['https://node.ghostnet.etherlink.com'],
+      http: ['https://128123.rpc.thirdweb.com', 'https://node.ghostnet.etherlink.com'],
     },
     public: {
-      http: ['https://node.ghostnet.etherlink.com'],
+      http: ['https://128123.rpc.thirdweb.com', 'https://node.ghostnet.etherlink.com'],
     },
   },
   blockExplorers: {
