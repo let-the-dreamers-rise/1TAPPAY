@@ -20,10 +20,10 @@ export const etherlinkShadownet = defineChain({
   },
   rpcUrls: {
     default: {
-      http: ['https://node.shadownet.etherlink.com'],
+      http: ['https://node.shadownet.etherlink.com', 'https://relay.shadownet.etherlink.com'],
     },
     public: {
-      http: ['https://node.shadownet.etherlink.com'],
+      http: ['https://node.shadownet.etherlink.com', 'https://relay.shadownet.etherlink.com'],
     },
   },
   blockExplorers: {
