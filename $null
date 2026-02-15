@@ -1,0 +1,25 @@
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[90mstderr[2m | tests/unit/utils/storageManager.test.ts[2m > [22m[2mStorageManager[2m > [22m[2mPayment Links[2m > [22m[2mshould handle corrupted data
+[22m[39mFailed to retrieve payment links: SyntaxError: Unexpected token 'i', "invalid json data" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at Module.getPaymentLinks [90m(C:\Users\ASHWIN GOYAL\OneDrive\Desktop\tz apac\[39mutils\storageManager.ts:103:25[90m)[39m
+    at [90mC:\Users\ASHWIN GOYAL\OneDrive\Desktop\tz apac\[39mtests\unit\utils\storageManager.test.ts:134:20
+    at Proxy.<anonymous> [90m(file:///C:/Users/ASHWIN%20GOYAL/OneDrive/Desktop/tz%20apac/[39mnode_modules/[4m@vitest[24m/expect/dist/index.js:1530:11[90m)[39m
+    at Proxy.<anonymous> [90m(file:///C:/Users/ASHWIN%20GOYAL/OneDrive/Desktop/tz%20apac/[39mnode_modules/[4m@vitest[24m/expect/dist/index.js:972:17[90m)[39m
+    at Proxy.methodWrapper [90m(file:///C:/Users/ASHWIN%20GOYAL/OneDrive/Desktop/tz%20apac/[39mnode_modules/[4mchai[24m/index.js:1686:25[90m)[39m
+    at [90mC:\Users\ASHWIN GOYAL\OneDrive\Desktop\tz apac\[39mtests\unit\utils\storageManager.test.ts:134:56
+    at [90mfile:///C:/Users/ASHWIN%20GOYAL/OneDrive/Desktop/tz%20apac/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:146:14
+    at [90mfile:///C:/Users/ASHWIN%20GOYAL/OneDrive/Desktop/tz%20apac/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:533:11
+    at runWithTimeout [90m(file:///C:/Users/ASHWIN%20GOYAL/OneDrive/Desktop/tz%20apac/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:39:7[90m)[39m
+Failed to retrieve payment links: SyntaxError: Unexpected token 'i', "invalid json data" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at Module.getPaymentLinks [90m(C:\Users\ASHWIN GOYAL\OneDrive\Desktop\tz apac\[39mutils\storageManager.ts:103:25[90m)[39m
+    at [90mC:\Users\ASHWIN GOYAL\OneDrive\Desktop\tz apac\[39mtests\unit\utils\storageManager.test.ts:135:20
+    at Proxy.assertThrows [90m(file:///C:/Users/ASHWIN%20GOYAL/OneDrive/Desktop/tz%20apac/[39mnode_modules/[4mchai[24m/index.js:2767:5[90m)[39m
+    at Proxy.methodWrapper [90m(file:///C:/Users/ASHWIN%20GOYAL/OneDrive/Desktop/tz%20apac/[39mnode_modules/[4mchai[24m/index.js:1686:25[90m)[39m
+    at Proxy.<anonymous> [90m(file:///C:/Users/ASHWIN%20GOYAL/OneDrive/Desktop/tz%20apac/[39mnode_modules/[4m@vitest[24m/expect/dist/index.js:1029:16[90m)[39m
+    at Proxy.overwritingMethodWrapper [90m(file:///C:/Users/ASHWIN%20GOYAL/OneDrive/Desktop/tz%20apac/[39mnode_modules/[4mchai[24m/index.js:1735:33[90m)[39m
+    at Proxy.<anonymous> [90m(file:///C:/Users/ASHWIN%20GOYAL/OneDrive/Desktop/tz%20apac/[39mnode_modules/[4m@vitest[24m/expect/dist/index.js:1509:21[90m)[39m
+    at Proxy.<anonymous> [90m(file:///C:/Users/ASHWIN%20GOYAL/OneDrive/Desktop/tz%20apac/[39mnode_modules/[4m@vitest[24m/expect/dist/index.js:972:17[90m)[39m
+    at Proxy.methodWrapper [90m(file:///C:/Users/ASHWIN%20GOYAL/OneDrive/Desktop/tz%20apac/[39mnode_modules/[4mchai[24m/index.js:1686:25[90m)[39m
+
