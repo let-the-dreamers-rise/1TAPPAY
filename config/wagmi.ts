@@ -10,9 +10,9 @@ import { defineChain } from 'viem';
 /**
  * Etherlink Testnet Chain Configuration
  */
-export const etherlinkTestnet = defineChain({
-  id: 128123,
-  name: 'Etherlink Testnet',
+export const etherlinkShadownet = defineChain({
+  id: 127823,
+  name: 'Etherlink Shadownet',
   nativeCurrency: {
     decimals: 18,
     name: 'XTZ',
@@ -20,10 +20,10 @@ export const etherlinkTestnet = defineChain({
   },
   rpcUrls: {
     default: {
-      http: ['https://128123.rpc.thirdweb.com', 'https://node.ghostnet.etherlink.com'],
+      http: ['https://node.shadownet.etherlink.com'],
     },
     public: {
-      http: ['https://128123.rpc.thirdweb.com', 'https://node.ghostnet.etherlink.com'],
+      http: ['https://node.shadownet.etherlink.com'],
     },
   },
   blockExplorers: {
@@ -41,6 +41,6 @@ export const etherlinkTestnet = defineChain({
 export const config = getDefaultConfig({
   appName: '1TapPay',
   projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'YOUR_PROJECT_ID',
-  chains: [etherlinkTestnet],
+  chains: [etherlinkShadownet],
   ssr: true, // Enable server-side rendering support
 });
